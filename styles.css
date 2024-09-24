@@ -1,0 +1,139 @@
+*{
+    margin: 0; 
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    background-color: #3e5702;
+}
+
+nav{
+    position:fixed; /*deixou o nav fixo*/
+    top: 0;
+    width: 100%;
+    background-color:#3e5702;
+    padding: 20px 0;
+
+}
+
+nav ul{
+    list-style-type: none; 
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li{
+    margin: 0 30px;
+}
+
+nav ul li a{
+color: #f5fbeef0;
+text-decoration: none ;
+font-size: 18px;
+padding: 10px;
+transition: color 0.3s ;
+}
+
+nav ul li a:hover{
+    color: rgba(151, 186, 12, 0.892);
+
+}
+
+section:not(#home){
+padding: 100px 20px;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+
+}
+
+#home{
+/* background-color: #4A90E2;*/
+background-image:
+url(https://cdn.pixabay.com/photo/2017/05/07/09/03/snake-2291913_1280.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+color: hsla(60, 96%, 49%, 0.866);
+height: 100vh;
+text-align: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+font-size: 1.6em;
+}
+
+time{
+    color: #ffffff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: small;
+}
+
+.content{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+}
+
+.content img{
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.content .text{
+    max-height: 600px;
+    text-align: left;
+}
+
+.content .text h2{
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #095822;
+}
+
+
+.content .text p{
+    font-size: 100%;
+    color: #378c2d;
+    font-style: oblique;
+    text-align: left;
+    padding-right: 10%;
+    
+}
+
+#introduction {
+    background-color:  #bfcd8fc3;
+}
+#about {
+    background-color: #b9bea6;
+}
+#contact{
+    background-color: #e1edbac3;
+}
+
+.cta-button{
+    margin-top: 30px;
+    background-color: #2f3b02;
+    color: #ffffff;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px #000000d9;
+    transition: background-color 1s ease, transform 1s ease;
+}
+
+.cta-button:hover{
+    box-shadow:  0px 4px 6px #190118d9;;
+
+}
